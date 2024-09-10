@@ -5,6 +5,7 @@ export const endpoints = {
     logout: "/users/logout",
     token: "/users/refresh-token",
     profile: "/users/profile",
+    googleAuth: "/auth/google",
   },
   dashbaord: {
     courses: "/courses",

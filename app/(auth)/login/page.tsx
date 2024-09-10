@@ -67,7 +67,12 @@ export default function SignInCard() {
     }
   };
 
-  const handleProviderSignUp = () => {};
+  const handleGoogleLogin = async () => {
+    window.open(
+      `${process.env.NEXT_PUBLIC_API_URL}${endpoints.auth.googleAuth}`,
+      "_self"
+    );
+  };
 
   return (
     <Card className="w-full h-full p-8">
@@ -111,7 +116,7 @@ export default function SignInCard() {
             size="lg"
             className="w-full relative"
             disabled={isLoading}
-            onClick={() => handleProviderSignUp()}
+            onClick={handleGoogleLogin}
           >
             <FcGoogle className="size-5 absolute top-3 left-2.5" />
             Continue with Google
