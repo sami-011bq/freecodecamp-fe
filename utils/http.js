@@ -21,7 +21,7 @@ const http = (baseURL = API_ROOT, timeout = TIMEOUT) => {
 
   const client = axios.create({
     baseURL,
-    timeout,
+    // timeout,
     headers,
     withCredentials: true,
   });
